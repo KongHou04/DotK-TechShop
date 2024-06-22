@@ -1,0 +1,136 @@
+﻿
+@using DotK_TechShop.Models.Db
+@model StoreFilterViewModel
+
+@{
+    Layout = "_StoreLayout";
+    ViewData["Title"] = "Product";
+    List<Product>? products = ViewData["Products"] as List<Product>;
+}
+<div class="container">
+    <div class="d-flex my-4">
+        <button type="button" class="web-btn web-btn-primary" data-bs-toggle="modal" data-bs-target="#filterModal">
+            Open Filter Form
+        </button>
+        <ul class="pagination ms-auto" style="margin-bottom: 0 !important;">
+            @{
+                if (ViewData["Page"] != null)
+                {
+                    var pageObj = ViewData["Page"];
+                    var maxPageNumberObj = ViewData["MaxPage"];
+                    int currentPage = Convert.ToInt16(pageObj);
+                    int maxPageNumber = Convert.ToInt16(maxPageNumberObj);
+                    int minPage = (currentPage - 2) <= 0 ? 1 : currentPage - 2;
+                    int maxPage = (currentPage + 2) >= maxPageNumber ? maxPageNumber : currentPage + 2;
+                    for (int i = minPage; i <= maxPage; i++)
+                    {
+                        <li class="page-item @(i == currentPage? "active" : "")">
+                            <a class="page-link" asp-controller="store" asp-action="index" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+    <div class="row gx-4 gy-5">
+        @if(products != null)
+        {
+            foreach (Product p in products)
+            {
+                <div class="col-3">
+                    @await Html.PartialAsync("_ProductCard", p)
+                </div>
+            }
+        }
+    </div>
+    <div class="d-flex my-4">
+        <ul class="pagination ms-auto" style="margin-bottom: 0 !important;">
+            @{
+                if (ViewData["Page"] != null)
+                {
+                    var pageObj = ViewData["Page"];
+                    var maxPageNumberObj = ViewData["MaxPage"];
+                    int currentPage = Convert.ToInt16(pageObj);
+                    int maxPageNumber = Convert.ToInt16(maxPageNumberObj);
+                    int minPage = (currentPage - 2) <= 0 ? 1 : currentPage - 2;
+                    int maxPage = (currentPage + 2) >= maxPageNumber ? maxPageNumber : currentPage + 2;
+                    for (int i = minPage; i <= maxPage; i++)
+                    {
+                        <li class="page-item @(i == currentPage? "active" : "")">
+                            <a class="page-link" asp-controller="store" asp-action="index" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="filterForm" class="p-4" asp-action="Index" asp-controller="Store">
+                <div class="form-group mb-3">
+                    <label for="KeyName">Từ khóa:</label>
+                    <input type="text" id="KeyName" name="KeyName" class="form-control" value="@Model.KeyName" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Brand">Thương hiệu:</label>
+                    <select id="Brand" name="Brand" class="form-control">
+                        <option value="">-- Chọn thương hiệu --</option>
+                        @foreach (var brand in Model.Brands)
+                        {
+                            if (Model.Brand == brand.Value)
+                            {
+                                <option value="@brand.Value" selected>@brand.Text</option>
+                            }
+                            else
+                            {
+                                <option value="@brand.Value">@brand.Text</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="FromPrice">Giá từ:</label>
+                    <input type="number" id="FromPrice" name="FromPrice" class="form-control" value="@Model.FromPrice" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="ToPrice">Giá đến:</label>
+                    <input type="number" id="ToPrice" name="ToPrice" class="form-control" value="@Model.ToPrice" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="SortBy">Sắp xếp theo:</label>
+                    <select id="SortBy" name="SortBy" class="form-control">
+                        @foreach (var option in Model.SortOptions)
+                        {
+                            if (option.Value == Model.SortBy)
+                            {
+                                <option value="@option.Value" selected>@option.Text</option>
+                            }
+                            else
+                            {
+                                <option value="@option.Value">@option.Text</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="web-btn web-btn-primary">Tìm kiếm</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById('sortOption').addEventListener('change', function () {
+        document.getElementById('filterForm').submit();
+    });
+</script>
+<script>
+    var selectedBrandID = @Html.Raw(Json.Serialize(ViewData["BrandFilterID"]));
+    if (selectedBrandID != null && selectedBrandID !== undefined) {
+        document.getElementById('brand').value = selectedBrandID;
+    }
+</script>

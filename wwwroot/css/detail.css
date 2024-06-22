@@ -1,0 +1,117 @@
+@import url(color.css);
+
+.version-selector {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 7px;
+  width: 100%;
+  background: none;
+  font-weight: bold;
+  color: #5f5f5f;
+  font-size: 15px;
+}
+
+.input-container {
+  position: relative;
+  height: 2.4rem;
+}
+
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.input-container label {
+  font-family: Roboto;
+  font-size: 12px !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input:checked + .radio-tile {
+  background-color: #ffffff;
+  border: 1px solid #dc3545 !important;
+  /* transform: scale(1.1); */
+}
+
+/* input:hover + .radio-tile {
+} */
+
+input:checked + .radio-tile ion-icon,
+input:checked + .radio-tile label {
+  color: #dc3545;
+}
+
+.detail-adv-item{
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  font-weight: bold;  
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid var(--web-primary-color);
+  color:var(--web-primary-color);
+
+}
+
+.detail-adv-item:hover{
+  background-color: var(--web-primary-color);
+  color: white !important;
+}
+
+.discount-adv-item{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.heart-2{
+  display: none;
+}
+.love-btn:hover >.heart-1{
+  display: none !important;
+}
+.love-btn:hover >.heart-2{
+  display: block !important;
+}
+
+.property-group{
+  font-family: Roboto, sans-serif;
+  color: #727272;
+  margin-bottom: 20px;
+}
+.property-group-name{
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f7f7f7;
+  padding: 8px 0;
+}
+.property-name-value{
+  display: flex;
+  padding: 8px 0;
+  border-top: 1px solid rgb(232, 232, 232);
+}
+.property-name{
+  width: 170px;
+  font-size: 14px;
+}
+.property-value{
+  font-size: 14px;
+  color: black;
+}

@@ -1,0 +1,35 @@
+@import url(color.css);
+
+.criteria-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 21px;
+    color: var(--web-primary-color);
+    text-shadow: 1px 1px 1px white;
+}
+
+.criteria{
+    background-color: rgb(255, 255, 255);
+    padding: 1.2rem 1.4rem;
+    color: #555555;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.criteria-title{
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.criteria-description{
+    margin-top: 10px;
+    font-size: 11px;
+    color: #949494;
+    font-weight: 500;
+}
+
+.criteria:hover{
+    margin-top: -5px;
+}

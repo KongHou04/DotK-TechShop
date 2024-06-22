@@ -1,0 +1,129 @@
+﻿@using DotK_TechShop.Models.Db;
+@model Order
+
+@{
+    Layout = "_StoreLayout";
+    ViewData["Title"] = "Check Order";
+}
+
+
+@if (Model == null)
+{
+    <div class="notification-container bg-body-secondary">
+        <div class="">
+            <h2>No order match the entered id</h2>
+            <p>Please check it again to make sure notthing went wrong</p>
+        </div>
+    </div>
+}
+else
+{
+    var point = (int)(Model.FinalTotal / 10000);
+
+    <div class="container">
+        <div class="row mt-4 mb-4 gx-5 text-primary-web">
+            <div class="col-12 col-lg-7 border-end">
+                <div class="bg-white fs-5 ff-roboto fw-bold text-center mb-3 py-2 web-text-primary">
+                    ORDER INFORMATION
+                </div>
+
+                @foreach (var p in Model.OrderDetails)
+                {
+                    <div class="selling-product-item">
+                        <img class="selling-product-img" src="/imgs/products/@Url.Content(p.Product.Image)" alt="">
+                        <div class="d-flex flex-column ms-3 w-100">
+                            <div class="selling-product-name">@p.Product.Name</div>
+                            <div class="selling-product-price">
+                                <div class="selling-product-unit-price">
+                                    Unit Price: @p.Product.Price
+                                </div>
+                                <div class="selling-product-total">
+                                    @(p.Quantity * p.Product.Price)
+                                </div>
+                            </div>
+                            <div class="selling-product-quantity position-relative">
+                                <div class="d-flex align-items-center" method="post" asp-controller="Cart">
+                                    <div>Quantity:</div>
+                                    <div class="ms-2">
+                                        @p.Quantity
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+                <div class="mt-5">
+                    <hr>
+                    <div class="bill-item">
+                        <div class="bill-item-name fw-bold">Total Order</div>
+                        <div class="bill-item-value text-danger" style="font-weight: 500;">
+                            @(Model.OrderTotal.ToString("#,##0"))
+                        </div>
+                    </div>
+                    <div class="bill-item">
+                        <div class="bill-item-name">Discount</div>
+                        <div class="bill-item-value">@(Model.Discount.ToString("#,##0"))</div>
+                    </div>
+                    <div class="bill-item">
+                        <div class="bill-item-name fw-bold">Final Total</div>
+                        <div class="bill-item-value text-danger" style="font-weight: 500;">
+                            @(Model.FinalTotal.ToString("#,##0"))
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bill-item mb-0" style="font-size: 16px;">
+                        <div class="bill-item-name">Accumulated Points</div>
+                        <div class="bill-item-value">@point points</div>
+                    </div>
+                </div>
+                @* <button class="mt-4 w-100 fw-bold btn btn-lg btn-success" style="height: 60px;">
+            ORDER
+            </button> *@
+            </div>
+
+            @* <div class="col-lg-1"></div> *@
+
+            <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+                <div class="customer-info-form">
+                    <div class="bg-white fs-5 ff-roboto fw-bold text-center mb-3 py-2 web-text-primary">
+                        CUSTOMER INFORMATION
+                    </div>
+                    <div class="mb-3">
+                        <label for="PhoneNumber" class="form-label customer-info-lbl">
+                            Phone Number <span class="text-danger">*</span>
+                        </label>
+                        <input type="tel" class="form-control" disabled value="@Model.Customer?.Phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FullName" class="form-label customer-info-lbl">
+                            Full Name <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control" disabled value="@Model.Customer?.FullName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label customer-info-lbl">
+                            Email <span class="fs-14">(Optional)</span>
+                        </label>
+                        <input type="email" class="form-control" disabled value="@Model.Customer?.Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Address" class="form-label customer-info-lbl">
+                            Shipping Address <span class="text-danger">*</span>
+                        </label>
+                        <textarea class="form-control" disabled placeholder="@Model.Customer?.Address"></textarea>
+                    </div>
+                    <div class="mt-3 text-danger">@ViewData["CustomerInvalidMessage"]</div>
+                    <button type="submit" class="mt-4 w-100 fw-bold web-btn btn-lg web-btn-primary" style="height: 60px;">
+                        CALL US FOR UPDATING YOUR ORDER
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+}

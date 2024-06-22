@@ -1,0 +1,100 @@
+﻿@model DotK_TechShop.Models.Db.Product;
+
+@{
+    Layout = "_StoreLayout";
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container bg-white">
+    <div class="d-flex align-items-center my-3">
+        <div class="fs-3 fw-bold">@Model.Name</div>
+    </div>
+
+    <div class="mt-3 pb-3 border-top">
+        <div class="row gx-md-5">
+            <div class="col-lg-5">
+                <div class="position-relative overflow-hidden mt-4">
+                    <img style="width:100%; object-fit: contain" src="/imgs/products/@Url.Content(Model.Image)" alt="">
+                </div>
+                <div class="row gx-3 mt-4">
+                    <div class="col-3">
+                        <div class="detail-adv-item">Free Shipping</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="detail-adv-item">1-Year Warranty</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="detail-adv-item">Overflow of Gifts</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="detail-adv-item">24/7 Service</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="d-flex align-items-center my-3">
+                    <div class="fs-3 fw-bold text-danger" style="line-height: 1;">@(Model.Price+"d")</div>
+                    <div class="ms-2 fw-bold"
+                        style="line-height: 1.1; text-decoration: line-through; color: #7c7c7c;">
+                        @((int)(Model.Price*1.15))d
+                    </div>
+                    <form class="ms-auto" asp-controller="Cart" asp-action="AddToCart">
+                        <input class="d-none" type="number" name="productID" value="@Model.ProductID"/>
+                        <button class="web-btn web-btn-primary fw-medium" type="submit" >Add to Cart</button>
+                    </form>
+                </div>
+                <div class="" style="font-size:18px">
+                    Instantly save <span class="fw-bold text-danger">10%</span> for customers
+                </div>
+                <div class="" style="font-size:18px">
+                    Give <span class="fw-bold text-danger">1500</span> reward points to TechMember account
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center my-3">
+                        <div class="fs-3 fw-bold" style="line-height: 1;">Specifications</div>
+                    </div>
+                    <table class="table table-striped" style="font-size: 14px;">
+                        <tbody>
+                            <tr>
+                                <td class="border ps-4 pe-4" style="width: 35% !important" scope="row">Screen</td>
+                                <td class="ps-4">6.8 inches</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">RAM</td>
+                                <td class="ps-4">@Model.RAM GB</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">Internal Memory</td>
+                                <td class="ps-4">@Model.Storage GB</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">CPU</td>
+                                <td class="ps-4">Snapshot Dragon 8</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">GPU</td>
+                                <td class="ps-4">ACp Sus 2018</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">Battery Capacity</td>
+                                <td class="ps-4">4000 mAh</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">Operating System</td>
+                                <td class="ps-4">iOS 13</td>
+                            </tr>
+                            <tr>
+                                <td class="border ps-4" scope="row">Origin</td>
+                                <td class="ps-4">Hong Kong</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 border ps-4" scope="row">Release Date</td>
+                                <td class="ps-4">01/2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

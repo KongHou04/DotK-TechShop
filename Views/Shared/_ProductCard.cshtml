@@ -1,0 +1,117 @@
+@model DotK_TechShop.Models.Db.Product;
+@{
+
+}
+
+@if (Model != null)
+{
+    <div class="product-card border bg-white">
+        <div class="py-3 border-bottom">
+            <div class="product-header d-flex position-relative">
+                <a class="" asp-controller="store" asp-action="detail" asp-route-id="@Model.ProductID" style="height: 220px">
+                    <div class="product-img-container">
+                        <img class="product-img" src="/imgs/products/@Url.Content(Model.Image)" alt="" />
+                    </div>
+                </a>
+                <div class="product-header-info">
+                    <div class="product-header-info-item" style="background-color: #dbf0ff">
+                        Giảm 5%
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #fff7be">
+                        Trả góp 0%
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #b6ffea">
+                        Bảo hành 12 tháng
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #ffd3de">
+                        2000 điểm thưởng
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 py-3 border-bottom bg-light">
+            <a class="fw-medium text-black" asp-controller="store" asp-action="detail"
+                style="text-decoration: none; font-size: 16px">
+                @Model.Name
+            </a>
+            <div class="d-flex flex-wrap">
+                <div class="fw-bold text-danger" style="font-size: 20px">
+                    @Model.Price
+                </div>
+                <div class="ms-auto" style="
+                      font-size: 13px;
+                      padding-top: 2px;
+                      text-decoration: line-through;
+                                ">
+                    @((int)(Model.Price*1.15))
+                </div>
+            </div>
+            <div class="d-flex mt-2">
+                <div class="info-item">
+                    <img class="info-item-icon" src="/imgs/icons/ram.png" alt="" />
+                    <div class="info-item-text">@Model.RAM GB</div>
+                </div>
+                <div class="ms-auto info-item">
+                    <img class="info-item-icon" src="/imgs/icons/storage.png" alt="" />
+                    <div class="info-item-text">@Model.Storage GB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="product-card border bg-white">
+        <div class="py-3 border-bottom">
+            <div class="product-header d-flex position-relative">
+                <a class="" asp-controller="store" asp-action="detail" style="height: 220px">
+                    <div class="product-img-container">
+                        <img class="product-img" src="/imgs/advs/154.png" alt="" />
+                    </div>
+                </a>
+                <div class="product-header-info">
+                    <div class="product-header-info-item" style="background-color: #dbf0ff">
+                        Giảm 20%
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #fff7be">
+                        Trả góp 0%
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #b6ffea">
+                        Bảo hành 12 tháng
+                    </div>
+                    <div class="product-header-info-item" style="background-color: #ffd3de">
+                        2000 điểm thưởng
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 py-3 border-bottom bg-light">
+            <a class="fw-medium text-black" asp-controller="store" asp-action="detail"
+                style="text-decoration: none; font-size: 16px">
+                iPhone 15 Pro Max 256GB
+            </a>
+            <div class="d-flex flex-wrap">
+                <div class="fw-bold text-danger" style="font-size: 20px">
+                    20.990.000đ
+                </div>
+                <div class="ms-auto" style="
+                      font-size: 13px;
+                      padding-top: 2px;
+                      text-decoration: line-through;
+                            ">
+                    24.990.000đ
+                </div>
+            </div>
+            <div class="d-flex mt-2">
+                <div class="info-item">
+                    <img class="info-item-icon" src="/imgs/icons/ram.png" alt="" />
+                    <div class="info-item-text">8GB</div>
+                </div>
+                <div class="ms-auto info-item">
+                    <img class="info-item-icon" src="/imgs/icons/storage.png" alt="" />
+                    <div class="info-item-text">256GB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

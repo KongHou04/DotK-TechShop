@@ -1,0 +1,109 @@
+.animation-left-to-right {
+    width: 100%;
+    animation: moveRight 1.2s ease;
+}
+
+.animation-left-to-right1 {
+    width: 100%;
+    animation: moveMaxRight 1.5s ease forwards;
+}
+.animation-left-to-right2 {
+    width: 100%;
+    animation: moveMaxRight2 1.5s ease forwards;
+}
+
+.animation-bottom-to-top{
+    animation: moveTop 1.2s ease;
+}
+
+.animation-flip{
+    height: 100%;
+}
+.animation-flip .flip-item {
+    height: 100%;
+    transition: 2s;
+    cursor: pointer;
+}
+.animation-flip .new-item-flip{
+    position: absolute;
+    top: 0;
+}
+
+.animation-flip>.new-item-flip {
+    z-index: -100;
+}
+
+.animation-flip:hover> .old-item-flip {
+    transform: rotateY(180deg);
+}
+
+.animation-flip:hover> .new-item-flip{
+    transform: rotateY(180deg);
+    z-index: 100;
+}
+
+.animation-color-change{
+    color: hsl(0 0% 100% / 0);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: red;
+    animation: colorChange 3s linear infinite;
+}
+
+
+
+
+@keyframes moveRight {
+    0% { margin-left: -120px; }
+    100% { margin-left: 0; }
+}
+
+@keyframes moveMaxRight {
+    0% { margin-left: -2000px; }
+    100% { margin-left: 0; }
+}
+
+@keyframes moveMaxRight2 {
+    0% { margin-left: 0px; }
+    100% { margin-left: 2000px;
+    display: none; }
+}
+
+@keyframes moveTop {
+    0% { margin-top: 120px; }
+    100% { margin-top: 0; }
+}
+@keyframes colorChange {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: red;
+    }
+}
+    
+
+
+
+
+
+
+.animation-time-1{
+    animation-duration: 1.2s;
+}
+.animation-time-2{
+    animation-duration: 1.4s;
+}
+.animation-time-3{
+    animation-duration: 1.6s;
+}
+.animation-time-4{
+    animation-duration: 1.8s;
+}
+.animation-time-5{
+    animation-duration: 2s;
+}

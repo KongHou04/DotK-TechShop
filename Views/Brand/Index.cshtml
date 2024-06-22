@@ -1,0 +1,35 @@
+@model IEnumerable<DotK_TechShop.Models.Db.Brand>
+
+@{
+    Layout = "_ManageLayout";
+    ViewData["Title"] = "Brand";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="my-4">
+    <a class ="web-btn web-btn-primary" asp-action="Create">Create New</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="align-middle">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td class="d-flex">
+                    <a class="ms-auto btn btn-warning" asp-action="Edit" asp-route-id="@item.BrandID">Edit</a>
+                    <a class="ms-3 btn btn-success" asp-action="Details" asp-route-id="@item.BrandID">Details</a>
+                    <a class="ms-3 btn btn-danger" asp-action="Delete" asp-route-id="@item.BrandID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

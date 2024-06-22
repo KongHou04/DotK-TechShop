@@ -1,0 +1,549 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\adv.css",
+      "PackagePath": "staticwebassets\\css\\adv.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\animation.css",
+      "PackagePath": "staticwebassets\\css\\animation.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\banner.css",
+      "PackagePath": "staticwebassets\\css\\banner.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\color.css",
+      "PackagePath": "staticwebassets\\css\\color.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\criteria.css",
+      "PackagePath": "staticwebassets\\css\\criteria.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\detail.css",
+      "PackagePath": "staticwebassets\\css\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\css\\swiper.css",
+      "PackagePath": "staticwebassets\\css\\swiper.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\D.png",
+      "PackagePath": "staticwebassets\\imgs\\D.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\DotK.png",
+      "PackagePath": "staticwebassets\\imgs\\DotK.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\130.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\130.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\154.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\154.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\162.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\162.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\44.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\44.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\adv1.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\adv1.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\adv2.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\adv2.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\adv3.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\adv3.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\advs\\flashsale.png",
+      "PackagePath": "staticwebassets\\imgs\\advs\\flashsale.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\backgrounds\\1.png",
+      "PackagePath": "staticwebassets\\imgs\\backgrounds\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\backgrounds\\2.png",
+      "PackagePath": "staticwebassets\\imgs\\backgrounds\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\backgrounds\\3.png",
+      "PackagePath": "staticwebassets\\imgs\\backgrounds\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\backgrounds\\4.png",
+      "PackagePath": "staticwebassets\\imgs\\backgrounds\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\backgrounds\\5.png",
+      "PackagePath": "staticwebassets\\imgs\\backgrounds\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\banner.png",
+      "PackagePath": "staticwebassets\\imgs\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\brand.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\brand.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\canva.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\canva.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\category.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\category.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\check.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\check.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\competitive.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\competitive.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\customer.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\customer.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\data-security.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\data-security.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\employee.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\employee.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\facebook.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\fast.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\fast.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\flaticon.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\flaticon.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\git.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\git.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\google.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\google.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\instagram.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\logout.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\logout.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\menu.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\menu.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\minus.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\minus.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\order.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\order.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\plus.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\plus.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\product.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\product.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\ram.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\ram.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\storage.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\storage.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\twitter.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\variety.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\variety.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\visual-studio-code.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\visual-studio-code.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\visual-studio.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\visual-studio.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\icons\\youtube.png",
+      "PackagePath": "staticwebassets\\imgs\\icons\\youtube.png"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401000322673.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401000322673.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401001009789.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401001009789.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401004001227.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401004001227.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401021939341.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401021939341.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401022347925.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401022347925.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023059194.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023059194.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023330264.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023330264.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023405993.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023405993.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023432004.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023432004.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023538344.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023538344.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023602645.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023602645.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023735820.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023735820.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401023805337.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401023805337.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401025741593.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401025741593.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401095148850.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401095148850.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401095702085.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401095702085.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\imgs\\products\\20240401095842890.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\20240401095842890.webp"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\js\\swipper.js",
+      "PackagePath": "staticwebassets\\js\\swipper.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CONG HAU\\Desktop\\DotK-TechShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\AuthDbContext\\net8.0\\staticwebassets\\msbuild.DotK-TechShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\AuthDbContext\\net8.0\\staticwebassets\\msbuild.build.DotK-TechShop.props",
+      "PackagePath": "build\\DotK-TechShop.props"
+    },
+    {
+      "Id": "obj\\AuthDbContext\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DotK-TechShop.props",
+      "PackagePath": "buildMultiTargeting\\DotK-TechShop.props"
+    },
+    {
+      "Id": "obj\\AuthDbContext\\net8.0\\staticwebassets\\msbuild.buildTransitive.DotK-TechShop.props",
+      "PackagePath": "buildTransitive\\DotK-TechShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

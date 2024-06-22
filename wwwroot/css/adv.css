@@ -1,0 +1,10 @@
+.adv-item {
+    height: 341px !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .adv-item {
+        height: 241px !important;
+    }
+}

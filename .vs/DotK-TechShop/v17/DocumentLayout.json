@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|c:\\users\\cong hau\\desktop\\fpt2024\\net104\\asm\\src\\dotk-techshop\\controllers\\identitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|solutionrelative:controllers\\identitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4DC1015-83AD-428D-920B-701DC523343A}|DotK-TechShop.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAswDoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:01:04.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IdentityController.cs",
+              "DocumentMoniker": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Controllers\\IdentityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IdentityController.cs",
+              "ToolTip": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Controllers\\IdentityController.cs",
+              "RelativeToolTip": "Controllers\\IdentityController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAADEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:01:04.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T15:00:22.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CONG HAU\\Desktop\\FPT2024\\NET104\\Asm\\src\\DotK-TechShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:00:15.37Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

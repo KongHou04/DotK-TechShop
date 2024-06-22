@@ -1,0 +1,40 @@
+﻿@using DotK_TechShop.Models.Db
+@{
+    Layout = "_StoreLayout";
+    ViewData["Title"] = "Home Page";
+    List<Product>? hotProducts = ViewData["HotProducts"] as List<Product>;
+}
+
+<div>
+    @await Html.PartialAsync("_Banner")
+</div>
+<div>
+    @await Html.PartialAsync("_Criteria")
+</div>
+<div>
+    @await Html.PartialAsync("_Adv")
+</div>
+
+
+<div class="container" style="margin-top: 80px;">
+    <div class="mb-4">
+        <div class="fs-3 fw-bold text-center" style="width:40% ; min-width: 300px; border-radius: 7px; background-color: #FF6100;">
+            <img style="height: 80px;" src="/imgs/advs/flashsale.png" alt="">
+        </div>
+    </div>
+    <div class="swiper hotDealSwiper">
+        <div class="swiper-wrapper">
+            @if (hotProducts != null)
+            {
+                foreach (var p in hotProducts)
+                {
+                    <div class="swiper-slide">
+                        @await Html.PartialAsync("_ProductCard", p);
+                    </div>
+                }
+            }
+        </div>
+        <div class="swiper-pagination hotDeal-swiper-pagination mt-3" style="position: relative">
+        </div>
+    </div>
+</div>

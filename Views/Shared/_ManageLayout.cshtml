@@ -1,0 +1,107 @@
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DotK Tech Shop - @ViewData["Title"]</title>
+    <link rel="icon" href="~/imgs/D.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/css/color.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/animation.css" />
+    <link rel="stylesheet" href="~/css/swiper.css" />
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/cart.css" />
+    <link rel="stylesheet" href="~/css/product.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body style="padding: 0; margin: 0; font-family: Roboto;">
+    <div class="position-absolute" style="width: 100%; height: 100%;">
+        <div class="d-flex h-100">
+
+            <div class="col-md-3 overflow-y-scroll">
+                <a class="d-flex align-items-center justify-content-center py-4 px-5 border-bottom"
+                    style="text-decoration: none; line-height: 1;">
+                    <img src="/imgs/DotK.png" style="height: 40px;" alt="">
+                    <div class="fw-bold web-text-primary" style="font-size: 56px; margin-bottom: -2px;">TECH</div>
+                </a>
+                <ul class="manage-nav border-bottom">
+                    <li>
+                        <a asp-controller="product" asp-action="index">
+                            <img src="/imgs/icons/product.png" alt="">
+                            <div>Product</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a  asp-controller="brand" asp-action="index">
+                            <img src="/imgs/icons/brand.png" alt="">
+                            <div>Brand</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="order" asp-action="index">
+                            <img src="/imgs/icons/order.png" alt="">
+                            <div>Order</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="customer" asp-action="index">
+                            <img src="/imgs/icons/customer.png" alt="">
+                            <div>Customer</div>
+                        </a>
+                    </li>
+                    @* <li>
+                        <a>
+                            <img src="/imgs/icons/employee.png" alt="">
+                            <div>Employee</div>
+                        </a>
+                    </li> *@
+                </ul>
+                <ul class="manage-nav border-bottom">
+                    <li>
+                        <a>
+                            <img src="/imgs/icons/employee.png" alt="">
+                            <div class ="text-truncate">@UserManager.GetUserName(User)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Identity" asp-action="LogOut">
+                            <img src="/imgs/icons/logout.png" alt="">
+                            <div>Log out</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="home" asp-action="index">
+                            <img src="/imgs/DotK.png" style="height: 20px;" alt="">
+                            <div>Go to Shop</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 py-4 px-5 overflow-y-scroll">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="~/js/swipper.js"></script>
+
+    <!-- Bổ sung các link tới các file JavaScript cần thiết ở đây -->
+</body>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+</html>

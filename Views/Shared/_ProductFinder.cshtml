@@ -1,0 +1,19 @@
+@using DotK_TechShop.Models.Db
+@model List<Product>
+
+@{
+    Layout = "";
+    var a = Model;
+    var c = a.Count();
+}
+
+<div class="mt-3">
+    <div class="row gy-4">
+        @foreach (var product in Model)
+        {
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <partial name="_ProductCard2" model="@product" />
+            </div>
+        }
+    </div>
+</div>

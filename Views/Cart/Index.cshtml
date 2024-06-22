@@ -1,0 +1,165 @@
+﻿@using DotK_TechShop.Models
+@model List<CartItemViewModel>
+
+@{
+    Layout = "_StoreLayout";
+    ViewData["Title"] = "Cart";
+}
+
+
+@if (Model == null)
+{
+    <div class="notification-container bg-body-secondary">
+        <div class="">
+            <h2>No product in you cart</h2>
+            <p>Visit our products page <a asp-controller="Store" asp-action="index">here</a>.</p>
+        </div>
+    </div>
+}
+else
+{
+    var orderTotal = Model.Sum(p => p.Total);
+    var discount = 100000;
+    var finalTotal = orderTotal - discount;
+    var point = (int)(finalTotal / 10000);
+
+    <div class="container">
+        <div class="row mt-4 mb-4 gx-5 text-primary-web">
+            <div class="col-12 col-lg-7 border-end">
+                <div class="bg-white fs-5 ff-roboto fw-bold text-center mb-3 py-2 web-text-primary">
+                    ORDER INFORMATION
+                </div>
+
+                @foreach (var p in Model)
+                {
+                    <div class="selling-product-item">
+                        <img class="selling-product-img" src="/imgs/products/@Url.Content(p.Product.Image)" alt="">
+                        <div class="d-flex flex-column ms-3 w-100">
+                            <div class="selling-product-name">@p.Product.Name</div>
+                            <div class="selling-product-price">
+                                <div class="selling-product-unit-price">
+                                    Unit Price: @p.Product.Price
+                                </div>
+                                <div class="selling-product-total">
+                                    @(p.Quantity * p.Product.Price)
+                                </div>
+                            </div>
+                            <div class="selling-product-quantity position-relative">
+                                <form class="d-flex align-items-center" method="post" asp-controller="Cart">
+                                    <input class="d-none" type="number" name="productID" value="@p.Product.ProductID">
+                                    <button class="d-flex align-items-center" type="submit" asp-action="IncreaseQuantity"
+                                        style="border: none; background: none;">
+                                        <img src="/imgs/icons/plus.png" style="height: 12px;" alt="">
+                                    </button>
+                                    <div>
+                                        @p.Quantity
+                                    </div>
+                                    <button class="d-flex align-items-center" type="submit" asp-action="DecreaseQuantity"
+                                        style="border: none; background: none;">
+                                        <img src="/imgs/icons/minus.png" style="height: 12px;" alt="">
+                                    </button>
+                                    <button class="btn btn-danger ms-auto py-0 fw-bold" asp-action="RemoveFromCart"
+                                    style="height:30px">Remove</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+                <div class="mt-5">
+                    <hr>
+                    <div class="mb-4">
+                        <div class="form-label ff-roboto">Use Discount Code</div>
+                        <div class="d-flex">
+                            <input type="text" class="form-control w-75" id="voucher-code-input">
+                            <button class="btn btn-success w-25" id="voucher-code-btn">Apply</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bill-item">
+                        <div class="bill-item-name fw-bold">Total Order</div>
+                        <div class="bill-item-value text-danger" style="font-weight: 500;">@(orderTotal.ToString("#,##0"))
+                        </div>
+                    </div>
+                    <div class="bill-item">
+                        <div class="bill-item-name">Discount</div>
+                        <div class="bill-item-value">@(discount.ToString("#,##0"))</div>
+                    </div>
+                    <div class="bill-item">
+                        <div class="bill-item-name fw-bold">Final Total</div>
+                        <div class="bill-item-value text-danger" style="font-weight: 500;">@(finalTotal.ToString("#,##0"))
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bill-item mb-0" style="font-size: 16px;">
+                        <div class="bill-item-name">Accumulated Points</div>
+                        <div class="bill-item-value">@point points</div>
+                    </div>
+                </div>
+                @* <button class="mt-4 w-100 fw-bold btn btn-lg btn-success" style="height: 60px;">
+            ORDER
+            </button> *@
+            </div>
+
+            @* <div class="col-lg-1"></div> *@
+
+            <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+                <form class="customer-info-form" method="post" asp-controller="Cart" asp-action="Order">
+                    <div class="bg-white fs-5 ff-roboto fw-bold text-center mb-3 py-2 web-text-primary">
+                        CUSTOMER INFORMATION
+                    </div>
+                    <div class="d-none">
+                        <input type="number" name="orderTotal" value="@orderTotal" />
+                        <input type="number" name="discount" value="@discount" />
+                        <input type="number" name="finalTotal" value="@finalTotal" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="PhoneNumber" class="form-label customer-info-lbl">
+                            Phone Number <span class="text-danger">*</span>
+                        </label>
+                        <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="0123456789">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FullName" class="form-label customer-info-lbl">
+                            Full Name <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="FullName" name="FullName" placeholder="Nguyễn Văn A">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label customer-info-lbl">Email <span
+                                class="fs-14">(Optional)</span></label>
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Address" class="form-label customer-info-lbl">
+                            Shipping Address <span class="text-danger">*</span>
+                        </label>
+                        <textarea class="form-control" id="Address" name="Address" rows="3"
+                            placeholder="Block A, Street B, District C, Province D"></textarea>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="acceptPolicy">
+                        <label class="form-check-label" for="acceptPolicy" style="font-size: 14px;">
+                            I agree with <a class="text-primary" style="text-decoration: underline;" href="">
+                                Terms and
+                                Conditions
+                            </a>
+                            of TechGalaxy
+                        </label>
+                    </div>
+                    <div class="mt-3 text-danger">@ViewData["CustomerInvalidMessage"]</div>
+                    <button type="submit" class="mt-4 w-100 fw-bold web-btn btn-lg web-btn-primary" style="height: 60px;">
+                        ORDER
+                    </button>
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+
+}

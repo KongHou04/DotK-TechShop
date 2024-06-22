@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DotK Tech Shop - @ViewData["Title"]</title>
+    <link rel="icon" href="~/imgs/D.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/css/color.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/animation.css" />
+    <link rel="stylesheet" href="~/css/swiper.css" />
+    <link rel="stylesheet" href="~/css/header.css" />
+    <link rel="stylesheet" href="~/css/banner.css" />
+    <link rel="stylesheet" href="~/css/criteria.css" />
+    <link rel="stylesheet" href="~/css/adv.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/product.css" />
+    <link rel="stylesheet" href="~/css/cart.css" />
+    <link rel="stylesheet" href="~/css/detail.css" />
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand web-focus" asp-controller="home" asp-action="index">
+                <img style="object-fit: contain; height: 30px" src="/imgs/DotK.png" alt="" />
+            </a>
+            <form class="ms-auto me-1 d-block d-md-none" asp-controller="store" asp-action="index" onsubmit="submitForm(event)">
+                <input class="form-control" type="text" name="nameKey" placeholder="Product Name"/>
+            </form>
+            <button class="navbar-toggler d-lg-none web-focus" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation" style="border: none; padding-top: 0 !important; padding-bottom: 0 !important;">
+                <img class="" src="/imgs/icons/menu.png" style="height: 50px;" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" asp-controller="home" asp-action="index"
+                            aria-current="page">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" asp-controller="store" asp-action="index" asp-route-id="1">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" asp-controller="cart" asp-action="index">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link custom-nav-link" data-bs-toggle="modal" data-bs-target="#checkOrderModal">
+                            Check Order
+                        </button>
+                    </li>
+                </ul>
+                <form class="d-none d-md-flex my-2 my-lg-0" asp-controller="store" asp-action="index">
+                    <input class="form-control me-sm-2" type="text" name="keyName" placeholder="Product Name" />
+                    <button class="web-btn web-btn-primary fw-bold my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+                <a class="web-btn web-btn-primary ms-2 fw-bold" asp-controller="product" asp-action="index">
+                    Manage
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-body-secondary" style="box-shadow: 0px 2px 10px rgb(207, 207, 207)">
+        <hr class="my-0" />
+        <div class="container py-4">
+            <div class="row gy-5 p-relative">
+                <div class=" col-lg-4">
+                    <ul class="nav nav-pills mb-3 bg-white border fw-medium"
+                        style="font-family: Roboto; border-radius: 7px" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold" id="pills-guest-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-guest" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">
+                                Guest
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="pills-partner-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-partner" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">
+                                Partner
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">
+                                Information
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content contact-form-1" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <div class="form-floating mb-3">
+                                <input readonly type="email" class="form-control bg-white" id="contactEmail"
+                                    value="conghau31052004@gmail.com" />
+                                <label for="contactEmail">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input readonly type="text" class="form-control bg-white" id="contactStudentCode"
+                                    value="ps35740" />
+                                <label for="contactPhone">Student Code</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input readonly type="text" class="form-control bg-white" id="contactPhone"
+                                    value="0775541796" />
+                                <label for="contactPhone">Phone Number</label>
+                            </div>
+                            <div class="row mx-0 mt-3">
+                                <button class="web-btn web-btn-primary fw-bold">Contact Now</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-guest" role="tabpanel"
+                            aria-labelledby="pills-guest-tab">
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" placeholder="Full Name" class="form-control"
+                                        id="inputNameGuest" />
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" placeholder="Email" class="form-control" id="inputEmailGuest"
+                                        aria-describedby="emailHelp" />
+                                </div>
+                                <div class="mb-2">
+                                    <input type="number" placeholder="Phone Number" class="form-control"
+                                        id="inputPhoneGuest" />
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" placeholder="What do you need support with?" rows="3"
+                                        id="inputReqGuest" style="resize: none"></textarea>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <button class="web-btn web-btn-primary fw-bold">
+                                        Contact Now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-partner" role="tabpanel"
+                            aria-labelledby="pills-partner-tab">
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" placeholder="Business Name" class="form-control"
+                                        id="inputNamePartner" />
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" placeholder="Email" class="form-control" id="inputEmailPartner"
+                                        aria-describedby="emailHelp" />
+                                </div>
+                                <div class="mb-2">
+                                    <input type="number" placeholder="Phone Number" class="form-control"
+                                        id="inputPhonePartner" />
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control"
+                                        placeholder="What does your business need support with?" id="inputReqPartner"
+                                        rows="3" style="resize: none"></textarea>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <button class="web-btn web-btn-primary fw-bold">
+                                        Contact Now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-8 position-relative footer-adv-section">
+                    <div class="swiper footerSwiper h-100">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide overflow-hidden" style="border-radius: 10px">
+                                <img class="img-cover" src="/imgs/advs/adv1.png" alt="" style="height: 100%" />
+                            </div>
+                            <div class="swiper-slide overflow-hidden" style="border-radius: 10px">
+                                <img class="img-cover" src="/imgs/advs/adv2.png" alt="" style="height: 100%" />
+                            </div>
+                            <div class="swiper-slide overflow-hidden" style="border-radius: 10px">
+                                <img class="img-cover" src="/imgs/advs/adv3.png" alt="" style="height: 100%" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination footer-swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-0" />
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div>
+                        <div class="title-other-information" style="color: #41a5ee">
+                            Owner Information
+                        </div>
+                        <div class="auth-information">Vu Nguyen Cong Hau</div>
+                        <div class="auth-information">Student ID: ps35740</div>
+                        <div class="auth-information">Subject: C# Programming</div>
+                    </div>
+                    <div class="pt-3">
+                        <div class="title-other-information text-danger">
+                            Register for Promotions
+                        </div>
+                        <form action="" style="margin-top: 5px">
+                            <div>
+                                <input class="form-control" placeholder="Phone Number" type="text" id="getCodePhone" />
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="acceptBeforeGetCode" />
+                                <label class="form-check-label" style="font-size: 12px" for="acceptBeforeGetCode">
+                                    I agree to the terms of TechGalaxy
+                                </label>
+                            </div>
+                            <button class="btn btn-danger button-medium mt-2">
+                                Register to Receive Code
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-3 other-infomation">
+                    <div class="title-other-information text-primary-web">
+                        Information and Policies
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Buy and pay online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Buy installments
+                                online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Buy installment with
+                                credit card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Purchase policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Discount policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Check online invoice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Update hot product
+                                information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Update best-selling
+                                items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Smart product lookup</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 other-infomation">
+                    <div class="title-other-information text-primary-web">
+                        Services and Other Information
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Payment discounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Corporate customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Warranty policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Customer information
+                                security policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Business cooperation
+                                contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Apply for TechGalaxy
+                                jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Phone warranty
+                                service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-0 text-muted other-information-item">Extended warranty
+                                service</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 other-infomation">
+                    <div>
+                        <div class="title-other-information text-primary-web">
+                            Connect with Us
+                        </div>
+                        <div class="d-flex" style="margin-top: 5px">
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/facebook.png" alt="" />
+                            </div>
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/youtube.png" alt="" />
+                            </div>
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/instagram.png" alt="" />
+                            </div>
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/twitter.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <div class="title-other-information text-danger">
+                            Development Tools
+                        </div>
+                        <div class="d-flex align-items-center suport-item" style="margin-top: 5px">
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/visual-studio.png" alt="" />
+                            </div>
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/visual-studio-code.png" alt="" />
+                            </div>
+                            <div class="suport-item-describe">Code and debug software</div>
+                        </div>
+                        <div class="d-flex align-items-center suport-item">
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/flaticon.png" alt="" />
+                            </div>
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/canva.png" alt="" />
+                            </div>
+                            <div class="suport-item-describe">Image editing website</div>
+                        </div>
+                        <div class="d-flex align-items-center suport-item">
+                            <div>
+                                <img class="contact-img" src="/imgs/icons/git.png" alt="" />
+                            </div>
+                            <div class="suport-item-describe">
+                                Source code management tool
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div>
+                        <a class="more-link-item">iPhone Phones - iPhone 15 Pro Max</a>
+                    </div>
+                    <div>
+                        <a class="more-link-item">Samsung Phones - Samsung Galaxy S 24 Ultra</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a class="more-link-item">Laptop Asus - Laptop HP - Laptop Dell - Laptop Acer</a>
+                    </div>
+                    <div>
+                        <a class="more-link-item">Gaming Laptops - Ultrabook Laptops - High-quality Laptops</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a class="more-link-item">Headphones - Keyboards - Chargers - Microphones - Mice - Mouse
+                            Pads</a>
+                    </div>
+                    <div>
+                        <a class="more-link-item">Accessories - Apple Accessories - Affordable Accessories</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a class="more-link-item">Discounted Products - Best Selling - New Products</a>
+                    </div>
+                    <div>
+                        <a class="more-link-item">Best Selling Phones of the Month - Latest Phone Lists</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="checkOrderModal" tabindex="-1" aria-labelledby="checkOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content" asp-controller="Cart" asp-action="CheckOrder">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkOrderModalLabel">Check Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="orderIdInput" class="form-label">Order ID</label>
+                        <input type="text" name="orderID" class="form-control" id="orderIdInput" placeholder="Enter Order ID">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="web-btn web-btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="~/js/swipper.js"></script>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            form.submit();
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>

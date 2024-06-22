@@ -1,0 +1,54 @@
+@model IEnumerable<DotK_TechShop.Models.Db.Product>
+
+@{
+    Layout = "_ManageLayout";
+    ViewData["Title"] = "Product";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="my-4">
+    <a class="web-btn web-btn-primary" asp-action="Create">Create New</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="align-middle">
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand.Name)
+            </td>
+            <td class="d-flex">
+                <a class="ms-auto btn btn-warning" asp-action="Edit" asp-route-id="@item.ProductID">Edit</a>
+                <a class="ms-3 btn btn-success" asp-action="Details" asp-route-id="@item.ProductID">Details</a>
+                <a class="ms-3 btn btn-danger" asp-action="Delete" asp-route-id="@item.ProductID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

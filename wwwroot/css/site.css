@@ -1,0 +1,39 @@
+@import url(./color.css);
+
+/* button styles */
+
+.web-btn {
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.web-btn-primary {
+  background-color: var(--web-primary-color);
+  border: 1px solid var(--web-primary-color);
+  color: white;
+}
+.web-btn-primary:hover {
+  filter: brightness(90%);
+}
+.web-btn-primary:focus {
+  box-shadow: 0 0 0 4px var(--web-primary-color-focus);
+  outline: none;
+}
+
+/* hr */
+hr {
+  color: #8e8e8e;
+}
+
+.web-text-primary{
+  color: var(--web-primary-color) !important;
+}
+
+/* change focus outline */
+.web-focus:focus {
+  box-shadow: 0 0 0 4px var(--web-primary-color-focus);
+  outline: none;
+}

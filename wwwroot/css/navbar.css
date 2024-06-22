@@ -1,0 +1,31 @@
+.manage-nav{
+    padding-inline-start: 0;
+    padding: 20px 0;
+}
+
+.manage-nav>li{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.manage-nav>li>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #464646;
+}
+.manage-nav>li>a>img{
+    height: 25px;
+}
+.manage-nav>li>a>div{
+    margin-left: 10px;
+    margin-bottom: -2px;
+    font-weight: 350;
+}
+
+.manage-nav>li:hover{
+    background-color: rgba(238, 228, 228, 0.9);
+    padding-left: 80px;
+}

@@ -1,0 +1,40 @@
+.banner{
+    background-image: url(/imgs/banner.png); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    color: #444444;
+    text-shadow: 1px 1px 2px white;
+    width: 100%;
+}
+
+.welcome-text{
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.brand-alias-text{
+    line-height: 1.4; font-family:Verdana ;
+    text-indent: -1.5px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.second-brand-alias-text{
+    list-style: 1.4;
+    font-weight: bold;
+    font-size: 24.5px;
+}
+
+.brand-description-text{
+    margin-top: 20px;
+    font-weight: 500;
+    width: 400px;
+    max-width: 100%;
+}
+
+.get-started{
+    margin-top: 30px;
+}

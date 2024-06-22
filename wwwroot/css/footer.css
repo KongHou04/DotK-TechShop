@@ -1,0 +1,66 @@
+.auth-information{
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    /* font-weight: bold; */
+    margin-top: 7px;
+    text-transform: uppercase;
+    /* color: #5e5e5e ; */
+    cursor: pointer;
+}
+.other-infomation{
+    font-family: Roboto,sans-serif;
+}
+.other-information-item{
+    font-size: 12px !important;
+    margin-top: 5px;
+
+}
+.title-other-information{
+    font-weight: bold;
+    font-size: 18px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-img{
+    height: 33px;
+    margin-right: 15px;
+}
+
+.suport-item{
+    margin-bottom: 7px;
+}
+
+.suport-item-describe{
+    font-size: 14px;
+}
+
+.contact-form-1{
+    height: 278px
+}
+
+.more-link-item{
+    color:rgb(146, 146, 146) !important;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.footer-adv-section{
+    height: 336px
+}
+.my-btn{
+    background-color: none !important;
+}
+.my-btn:active{
+    font-size: 30px;
+    background-color: #41a5ee !important;
+}
+
+
+@media only screen and (max-width: 576px){
+    .contact-form-1{
+        height: 258px
+    }
+}
