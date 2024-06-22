@@ -5,8 +5,8 @@ namespace DotK_TechShop.Services;
 
 public class EmailSender
 {
-    private readonly string _username = "conghau31052004@gmail.com";
-    private readonly string _password = "xdqzdhcrbmtryjyn";
+    private readonly string _username;
+    private readonly string _password;
 
     public EmailSender(string username, string password)
     {
